@@ -55,7 +55,7 @@ ROOT_URLCONF = 'mysite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],  # canhdq: add a DIRS option in the TEMPLATES setting
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
